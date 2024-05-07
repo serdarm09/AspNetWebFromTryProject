@@ -1,0 +1,336 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4346D0CE-D36B-47B6-8A6B-1F1C1C090C18}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TryProject</RootNamespace>
+    <AssemblyName>TryProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44389</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\images\albums\01.jpg" />
+    <Content Include="assets\images\albums\02.jpg" />
+    <Content Include="assets\images\albums\03.jpg" />
+    <Content Include="assets\images\albums\04.jpg" />
+    <Content Include="assets\images\albums\05.jpg" />
+    <Content Include="assets\images\albums\06.jpg" />
+    <Content Include="assets\images\app-store.svg" />
+    <Content Include="assets\images\avatar\01.jpg" />
+    <Content Include="assets\images\avatar\02.jpg" />
+    <Content Include="assets\images\avatar\03.jpg" />
+    <Content Include="assets\images\avatar\04.jpg" />
+    <Content Include="assets\images\avatar\05.jpg" />
+    <Content Include="assets\images\avatar\06.jpg" />
+    <Content Include="assets\images\avatar\07.jpg" />
+    <Content Include="assets\images\avatar\08.jpg" />
+    <Content Include="assets\images\avatar\09.jpg" />
+    <Content Include="assets\images\avatar\10.jpg" />
+    <Content Include="assets\images\avatar\11.jpg" />
+    <Content Include="assets\images\avatar\12.jpg" />
+    <Content Include="assets\images\avatar\13.jpg" />
+    <Content Include="assets\images\avatar\14.jpg" />
+    <Content Include="assets\images\avatar\placeholder.jpg" />
+    <Content Include="assets\images\bg\01.jpg" />
+    <Content Include="assets\images\bg\02.jpg" />
+    <Content Include="assets\images\bg\03.jpg" />
+    <Content Include="assets\images\bg\04.jpg" />
+    <Content Include="assets\images\bg\05.jpg" />
+    <Content Include="assets\images\bg\06.jpg" />
+    <Content Include="assets\images\bg\07.jpg" />
+    <Content Include="assets\images\cookie.svg" />
+    <Content Include="assets\images\elements\01.svg" />
+    <Content Include="assets\images\elements\02.svg" />
+    <Content Include="assets\images\elements\03.svg" />
+    <Content Include="assets\images\elements\04.svg" />
+    <Content Include="assets\images\elements\05.svg" />
+    <Content Include="assets\images\elements\06.svg" />
+    <Content Include="assets\images\elements\07.svg" />
+    <Content Include="assets\images\elements\08.svg" />
+    <Content Include="assets\images\elements\09.svg" />
+    <Content Include="assets\images\elements\10.svg" />
+    <Content Include="assets\images\elements\11.svg" />
+    <Content Include="assets\images\elements\12.svg" />
+    <Content Include="assets\images\elements\14.svg" />
+    <Content Include="assets\images\elements\319A0761.html" />
+    <Content Include="assets\images\elements\319A0763.html" />
+    <Content Include="assets\images\elements\319A0767.html" />
+    <Content Include="assets\images\elements\8F5261F3.html" />
+    <Content Include="assets\images\elements\8F5261F4.html" />
+    <Content Include="assets\images\elements\8F5261F5.html" />
+    <Content Include="assets\images\elements\BD7D5ED1.html" />
+    <Content Include="assets\images\elements\BD7D5ED3.html" />
+    <Content Include="assets\images\elements\BD7D5ED6.html" />
+    <Content Include="assets\images\events\01.jpg" />
+    <Content Include="assets\images\events\02.jpg" />
+    <Content Include="assets\images\events\03.jpg" />
+    <Content Include="assets\images\events\04.jpg" />
+    <Content Include="assets\images\events\05.jpg" />
+    <Content Include="assets\images\events\06.jpg" />
+    <Content Include="assets\images\google-play.svg" />
+    <Content Include="assets\images\icon\arrow-boxed-outline-filled.svg" />
+    <Content Include="assets\images\icon\badge-outline-filled.svg" />
+    <Content Include="assets\images\icon\calendar-outline-filled.svg" />
+    <Content Include="assets\images\icon\chat-alt-outline-filled.svg" />
+    <Content Include="assets\images\icon\chat-outline-filled.svg" />
+    <Content Include="assets\images\icon\clipboard-outline-filled.svg" />
+    <Content Include="assets\images\icon\clock-outline-filled.svg" />
+    <Content Include="assets\images\icon\cog-outline-filled.svg" />
+    <Content Include="assets\images\icon\earth-outline-filled.svg" />
+    <Content Include="assets\images\icon\handshake-outline-filled.svg" />
+    <Content Include="assets\images\icon\home-outline-filled.svg" />
+    <Content Include="assets\images\icon\imac-outline-filled.svg" />
+    <Content Include="assets\images\icon\like-outline-filled.svg" />
+    <Content Include="assets\images\icon\medal-outline-filled.svg" />
+    <Content Include="assets\images\icon\notification-outlined-filled.svg" />
+    <Content Include="assets\images\icon\person-outline-filled.svg" />
+    <Content Include="assets\images\icon\shield-outline-filled.svg" />
+    <Content Include="assets\images\icon\star-outline-filled.svg" />
+    <Content Include="assets\images\icon\task-done-outline-filled.svg" />
+    <Content Include="assets\images\icon\trash-var-outline-filled.svg" />
+    <Content Include="assets\images\logo.svg" />
+    <Content Include="assets\images\logo\01.svg" />
+    <Content Include="assets\images\logo\02.svg" />
+    <Content Include="assets\images\logo\03.svg" />
+    <Content Include="assets\images\logo\04.svg" />
+    <Content Include="assets\images\logo\05.svg" />
+    <Content Include="assets\images\logo\06.svg" />
+    <Content Include="assets\images\logo\08.svg" />
+    <Content Include="assets\images\logo\09.svg" />
+    <Content Include="assets\images\logo\10.svg" />
+    <Content Include="assets\images\logo\11.svg" />
+    <Content Include="assets\images\logo\12.svg" />
+    <Content Include="assets\images\logo\13.svg" />
+    <Content Include="assets\images\logo\logo.jpeg" />
+    <Content Include="assets\images\mockup\app-placeholder.jpg" />
+    <Content Include="assets\images\mockup\app-placeholder2.jpg" />
+    <Content Include="assets\images\mockup\app-placeholder3.jpg" />
+    <Content Include="assets\images\mockup\mac-placeholder.jpg" />
+    <Content Include="assets\images\post\16by9\01.jpg" />
+    <Content Include="assets\images\post\16by9\02.jpg" />
+    <Content Include="assets\images\post\16by9\03.jpg" />
+    <Content Include="assets\images\post\16by9\04.jpg" />
+    <Content Include="assets\images\post\16by9\05.jpg" />
+    <Content Include="assets\images\post\16by9\06.jpg" />
+    <Content Include="assets\images\post\16by9\07.jpg" />
+    <Content Include="assets\images\post\16by9\08.jpg" />
+    <Content Include="assets\images\post\16by9\09.jpg" />
+    <Content Include="assets\images\post\16by9\10.jpg" />
+    <Content Include="assets\images\post\16by9\11.jpg" />
+    <Content Include="assets\images\post\16by9\12.jpg" />
+    <Content Include="assets\images\post\16by9\13.jpg" />
+    <Content Include="assets\images\post\16by9\14.jpg" />
+    <Content Include="assets\images\post\16by9\big\01.jpg" />
+    <Content Include="assets\images\post\16by9\big\02.jpg" />
+    <Content Include="assets\images\post\16by9\big\03.jpg" />
+    <Content Include="assets\images\post\16by9\large\01.jpg" />
+    <Content Include="assets\images\post\16by9\large\02.jpg" />
+    <Content Include="assets\images\post\16by9\large\03.jpg" />
+    <Content Include="assets\images\post\16by9\large\04.jpg" />
+    <Content Include="assets\images\post\16by9\large\05.jpg" />
+    <Content Include="assets\images\post\16by9\large\06.jpg" />
+    <Content Include="assets\images\post\16by9\large\07.jpg" />
+    <Content Include="assets\images\post\16by9\large\08.jpg" />
+    <Content Include="assets\images\post\16by9\large\09.jpg" />
+    <Content Include="assets\images\post\16by9\large\10.jpg" />
+    <Content Include="assets\images\post\16by9\large\11.jpg" />
+    <Content Include="assets\images\post\16by9\large\12.jpg" />
+    <Content Include="assets\images\post\16by9\large\13.jpg" />
+    <Content Include="assets\images\post\16by9\large\14.jpg" />
+    <Content Include="assets\images\post\16by9\large\15.jpg" />
+    <Content Include="assets\images\post\1by1\01.jpg" />
+    <Content Include="assets\images\post\1by1\02.jpg" />
+    <Content Include="assets\images\post\1by1\03.jpg" />
+    <Content Include="assets\images\post\1by1\04.jpg" />
+    <Content Include="assets\images\post\1by1\05.jpg" />
+    <Content Include="assets\images\post\1by1\06.jpg" />
+    <Content Include="assets\images\post\1by1\07.jpg" />
+    <Content Include="assets\images\post\3by2\01.jpg" />
+    <Content Include="assets\images\post\3by2\02.jpg" />
+    <Content Include="assets\images\post\3by2\03.jpg" />
+    <Content Include="assets\images\post\4by3\01.jpg" />
+    <Content Include="assets\images\post\4by3\02.jpg" />
+    <Content Include="assets\images\post\4by3\03.jpg" />
+    <Content Include="assets\images\post\4by3\04.jpg" />
+    <Content Include="assets\images\post\4by3\05.jpg" />
+    <Content Include="assets\images\post\4by3\06.jpg" />
+    <Content Include="assets\images\qfavicon.ico" />
+    <Content Include="assets\images\qr-code.png" />
+    <Content Include="assets\images\videos\audio.mp3" />
+    <Content Include="assets\images\videos\poster.jpg" />
+    <Content Include="assets\images\videos\video-call.mp4" />
+    <Content Include="assets\images\videos\video-feed.mp4" />
+    <Content Include="assets\js\functions.js" />
+    <Content Include="assets\js\zuck-stories.js" />
+    <Content Include="assets\vendor\bootstrap-icons\bootstrap-icons.css" />
+    <Content Include="assets\vendor\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="assets\vendor\choices.js\public\assets\scripts\choices.min.js" />
+    <Content Include="assets\vendor\choices.js\public\assets\styles\choices.min.css" />
+    <Content Include="assets\vendor\dropzone\dist\dropzone.css" />
+    <Content Include="assets\vendor\dropzone\dist\dropzone.js" />
+    <Content Include="assets\vendor\dropzone\dist\min\dropzone.min.css" />
+    <Content Include="assets\vendor\dropzone\dist\min\dropzone.min.js" />
+    <Content Include="assets\vendor\flatpickr\dist\flatpickr.css" />
+    <Content Include="assets\vendor\flatpickr\dist\flatpickr.min.css" />
+    <Content Include="assets\vendor\flatpickr\dist\flatpickr.min.js" />
+    <Content Include="assets\vendor\font-awesome\css\all.min.css" />
+    <Content Include="assets\vendor\glightbox-master\dist\css\glightbox.min.css" />
+    <Content Include="assets\vendor\glightbox-master\dist\js\glightbox.min.js" />
+    <Content Include="assets\vendor\OverlayScrollbars-master\css\OverlayScrollbars.min.css" />
+    <Content Include="assets\vendor\OverlayScrollbars-master\js\OverlayScrollbars.min.js" />
+    <Content Include="assets\vendor\plyr\plyr.css" />
+    <Content Include="assets\vendor\plyr\plyr.js" />
+    <Content Include="assets\vendor\pswmeter\pswmeter.min.js" />
+    <Content Include="assets\vendor\tiny-slider\dist\tiny-slider.css" />
+    <Content Include="assets\vendor\tiny-slider\dist\tiny-slider.js" />
+    <Content Include="assets\vendor\zuck.js\dist\zuck.min.css" />
+    <Content Include="assets\vendor\zuck.js\dist\zuck.min.js" />
+    <Content Include="Home.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\DataBaseOpen.cs" />
+    <Compile Include="Class\Ssh256Convertor.cs" />
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Validaitons\Validation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\vendor\bootstrap-icons\fonts\bootstrap-iconsafdf.woff" />
+    <Content Include="assets\vendor\bootstrap-icons\fonts\bootstrap-iconsafdf.woff2" />
+    <Content Include="assets\vendor\font-awesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="assets\vendor\font-awesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="assets\vendor\font-awesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="assets\vendor\font-awesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="assets\vendor\font-awesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="assets\vendor\font-awesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="assets\vendor\font-awesome\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="assets\vendor\font-awesome\webfonts\fa-v4compatibility.woff2" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52081</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44389/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
